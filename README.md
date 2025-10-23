@@ -1,5 +1,4 @@
 C3_Turtlebot4_Nav
-ROKEY 지능-1 C-3조 파이널 프로젝트 결과물입니다.
 
 Yolov8과 Turtlebot4 2대를 이용한 배송 서비스를 구현하였습니다.
 
