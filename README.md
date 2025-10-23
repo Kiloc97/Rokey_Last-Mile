@@ -11,8 +11,6 @@
 
 _YOLOv8과 TurtleBot4 2대를 이용한 지능형 협력 배송 시스템_
 
-[🎥 데모 영상](#) | [📖 문서](#사용법) | [🐛 이슈 제보](https://github.com/Kiloc97/Rokey_Last-Mile/issues)
-
 </div>
 
 ---
@@ -217,64 +215,6 @@ map/
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-20.04%20LTS-E95420?style=for-the-badge&logo=ubuntu)
 
 </div>
-
-## 🚨 문제 해결
-
-### 자주 발생하는 문제들
-
-<details>
-<summary>💡 로봇이 움직이지 않아요</summary>
-
-1. **네임스페이스 확인**
-
-   ```bash
-   ros2 node list | grep robot
-   ```
-
-2. **토픽 연결 상태 확인**
-
-   ```bash
-   ros2 topic list | grep /robot8
-   ```
-
-3. **로봇 전원 및 통신 상태 확인**
-</details>
-
-<details>
-<summary>💡 객체 감지가 안돼요</summary>
-
-1. **카메라 연결 확인**
-
-   ```bash
-   ros2 topic echo /camera/image_raw
-   ```
-
-2. **모델 파일 존재 확인**
-
-   ```bash
-   ls -la src/mini_project/model/real_final_best.pt
-   ```
-
-3. **YOLOv8 패키지 설치 확인**
-   ```bash
-   pip list | grep ultralytics
-   ```
-   </details>
-
-<details>
-<summary>💡 Following Car가 작동하지 않아요</summary>
-
-1. **Depth 카메라 데이터 확인**
-
-   ```bash
-   ros2 topic echo /robot8/oakd/rgb/preview/depth
-   ```
-
-2. **Transform 확인**
-   ```bash
-   ros2 run tf2_tools view_frames
-   ```
-   </details>
 
 ## 📚 추가 자료
 
